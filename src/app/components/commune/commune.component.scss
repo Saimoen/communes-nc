@@ -1,0 +1,46 @@
+.sud {
+  background-color: red($color: #ec1313);
+  color: #ec1313;
+}
+
+.nord {
+  background-color: blue($color: #0d0dec);
+  color: #0d0dec;
+}
+
+.iles {
+  background-color: green($color: #0dec0d);
+  color: #0dec0d;
+}
+
+.fs-very-high {
+  font-size: 12vh;
+}
+
+.fs-high {
+  font-size: 9vh;
+}
+
+.fs-mid {
+  font-size: 6vh;
+}
+
+.fs-min {
+  font-size: 3vh;
+}
+
+.color-low {
+  background-color: #f0f0f0;
+}
+
+.color-mid {
+  background-color: #ddd;
+}
+
+.color-high {
+  background-color: #ccc;
+}
+
+.color-very-high {
+  background-color: #bbb;
+}

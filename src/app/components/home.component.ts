@@ -23,5 +23,4 @@ interface Commune {
 })
 export class HomeComponent {
   public data: Commune[] = data;
-
 }

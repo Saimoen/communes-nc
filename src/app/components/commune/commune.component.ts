@@ -23,39 +23,6 @@ interface Commune {
 export class CommuneComponent {
   @Input() public data: Commune[] = [];
 
-  constructor() {}
-
-  ngOnInit() {}
-
-  public couleur(province: string, superficie: string): string {
-    this.superficie(superficie);
-    switch (province) {
-      case 'Sud':
-        return 'sud';
-      case 'Nord':
-        return 'nord';
-      case 'Iles':
-        return 'iles';
-      default:
-        return '';
-    }
-  }
-  private superficie(superficie: string) {
-    console.log(superficie);
-    switch (true) {
-      case +superficie > 1000:
-        return 'color-very-high';
-      case +superficie > 600:
-        return 'color-high';
-      case +superficie > 400:
-        return 'color-mid';
-      case +superficie > 200:
-        return 'color-low';
-      default:
-        return '';
-    }
-  }
-
   public getCouleurIntensite(superficie: string): string {
     if (parseInt(superficie) > 1000) {
       return 'color-very-high';
@@ -63,7 +30,7 @@ export class CommuneComponent {
       return 'color-high';
     } else if (parseInt(superficie) > 300) {
       return 'color-mid';
-    } else if (parseInt(superficie) > 50) {
+    } else if (parseInt(superficie) > 30) {
       return 'color-low';
     } else {
       return '';
